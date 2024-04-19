@@ -1,0 +1,23 @@
+if SHIELD_APT_LEFT
+
+	config ZMK_KEYBOARD_NAME
+		default "LAir Pod Touch"
+	
+	config ZMK_SPLIT_BLE_ROLE_CENTRAL
+		default y
+
+endif
+
+if SHIELD_APT_RIGHT
+
+	config ZMK_KEYBOARD_NAME
+		default "RAir Pod Touch"
+		
+endif
+
+if SHIELD_APT_LEFT || SHIELD_APT_RIGHT
+
+	config ZMK_SPLIT
+		default y
+
+endif
