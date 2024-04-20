@@ -1,5 +1,5 @@
 config SHIELD_APT_LEFT
-	def_bool $(shields_list_contains apt_left)
+	def_bool $(shields_list_contains,apt_left)
 
 config SHIELD_APT_RIGHT
-	def_bool $(shields_list_contains apt_right)
+	def_bool $(shields_list_contains,apt_right)
